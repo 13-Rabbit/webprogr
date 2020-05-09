@@ -1,0 +1,33 @@
+<html>
+<head>
+ <meta charset="utf-8">
+</head>
+<body >
+<p><b>Какое у вас состояние разума?</b></p>
+<input type="radio" id="name1" name = "radiobutton">
+<label for="name1">Чистое</label>
+<br>
+<input type="radio" id="name2" name = "radiobutton">
+<label for="name2">Гневное</label>
+<br>
+<input type="radio" id="name3" name = "radiobutton">
+<label for="name3">Дзен</label>
+<br><br>
+<a onmouseover="Status()">Вывод</a>
+
+<script>
+function Status() {
+  var status = "NO";
+   if (document.getElementById("name1").checked)
+       {status = "Чистое";}
+   if (document.getElementById("name2").checked)
+       {status = "Гневное";}
+   if (document.getElementById("name3").checked)
+       {status = "Дзен";}
+   
+   alert(status);
+}
+</script>
+
+</body>
+</html>
