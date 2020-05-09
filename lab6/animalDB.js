@@ -1,0 +1,2 @@
+  
+db.getCollection('animals').find({})
